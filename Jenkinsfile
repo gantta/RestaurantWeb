@@ -1,5 +1,5 @@
 node {
-    docker.image.("maven:latest").inside() {
+    docker.image.("maven").inside() {
         stage('Checkout') {
           git 'https://github.com/gantta/RestaurantWeb.git'
         }
